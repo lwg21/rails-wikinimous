@@ -1,0 +1,19 @@
+<article>
+  <h1>
+  <%= @article.title %>
+  <small>
+    <%= link_to article_path(@article) do %>
+      <i class="fa fa-pencil"></i>
+    <% end %>
+    <%= link_to article_path(@article) do %>
+      <i class="fa-solid fa-trash-can"></i>
+    <% end %>
+  </small>
+  </h1>
+
+  <hr>
+
+  <p>
+    <%= @article.content %>
+  </p>
+</article>
